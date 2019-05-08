@@ -1,0 +1,45 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*  Header Section  */
+header {
+    width: 100vw;
+    height: 200px;
+    background-color: black;
+    margin: 0 auto;
+    top: 0;
+}
+
+.header-inner-container {
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-title {
+    display: inline-flex;
+    max-width: 50%;
+    height: 100%;
+}
+
+.header-image-logo {
+    max-width: 50%;
+}
+
+.header-image-logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.header-title-text {
+    max-width: 50%;
+}
+
+.header-title-text h2 {
+    color: white;
+}
