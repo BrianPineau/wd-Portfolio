@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+
 /*  Header Section  */
 header {
     width: 100vw;
@@ -42,4 +43,30 @@ header {
 
 .header-title-text h2 {
     color: white;
+}
+
+.header-menu {
+    float: right;
+}
+
+.header-list {
+    display: inline-flex;
+    width: 100px;
+    height: 200px;
+}
+
+.menu-item-1 {
+    background-color: rgb(150, 188, 206);
+}
+
+.menu-item-2 {
+    background-color: #FF6F69;
+}
+
+.menu-item-3 {
+    background-color: #88D8B0;
+}
+
+.menu-item-4 {
+    background-color: #FFCC5C;
 }
