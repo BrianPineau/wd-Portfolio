@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>WD-Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Rubik:400,700,900" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="./resources/main.css">
+  <link rel="stylesheet" type="text/javascript" href="./Resources/Main.js">
 </head>
-<body>
+<body onload="resizeHeader();">
 
 <!--  Header Section  -->
   <header>
@@ -35,9 +37,17 @@
   </header>
 
 
-<!--  Banner Section  -->
-  <section class="banner-box">
+<!--  Outer & Inner Parallax Wrappers  -->
+<div class="parallax-outer-wrapper">
+  <div class="parallax-inner-wrapper">
 
+
+<!--  Hero Section  -->
+  <section class="hero-box">
+    <div class="hero-inner-container">
+      <h1>Moving the World Forward</h1>
+      <p>Pixel By Pixel.</p>
+    </div>
   </section>
 
 
@@ -192,6 +202,10 @@
 <footer>
 
 </footer>
+
+
+</div>
+</div>
 
 </body>
 </html>

@@ -6,14 +6,33 @@
     padding: 0;
 }
 
+html {
+    font-family: rubik;
+}
+
+.parallax-outer-wrapper {
+    overflow: hidden;
+}
+
+.parallax-inner-wrapper {
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 
 /*  Header Section  */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
-    height: 200px;
+    height: 140px;
+    z-index: 100;
     background-color: black;
     margin: 0 auto;
-    top: 0;
 }
 
 .header-inner-container {
@@ -49,24 +68,79 @@ header {
     float: right;
 }
 
+.header-menu ul {
+    position: relative;
+}
+
 .header-list {
     display: inline-flex;
+    position: absolute;
+    top: -80px;
     width: 100px;
-    height: 200px;
+    height: 270px;
+    border-radius: 10px;
+    justify-content: center;
+    padding-top: 215px;
+    color: white;
+    font-weight: 700;
 }
 
 .menu-item-1 {
-    background-color: rgb(150, 188, 206);
+    background-color: rgb(80, 174, 218);
+    border: 6px solid rgb(118, 185, 216);
+    left: -412px;
 }
 
 .menu-item-2 {
-    background-color: #FF6F69;
+    background-color: rgb(233, 57, 51);
+    border: 6px solid rgb(226, 99, 95);
+    left: -308px;
 }
 
 .menu-item-3 {
-    background-color: #88D8B0;
+    background-color: rgb(79, 212, 146);
+    border: 6px solid rgb(123, 216, 169);
+    left: -204px;
 }
 
 .menu-item-4 {
-    background-color: #FFCC5C;
+    background-color: rgb(249, 192, 70);
+    border: 6px solid rgb(248, 205, 111);
+    left: -100px;
+}
+
+
+/*  Hero Section  */
+.hero-box {
+    margin-top: 140px;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.hero-box::before {
+    background: url("./Pictures/color.jpg");
+    background-position: center;
+    background-size: center;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    transform: translatez(-1px) scale(2);
+    content: "";
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-inner-container {
+    margin: 400px auto;
+    padding: 50px;
+    max-width: 1180px;
+    font-size: 2rem;
+}
+
+.hero-inner-container h1 {
+    margin-bottom: 10px;
 }
