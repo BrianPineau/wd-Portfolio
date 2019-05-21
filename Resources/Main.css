@@ -86,26 +86,32 @@ header {
 }
 
 .menu-item-1 {
-    background-color: rgb(80, 174, 218);
+    background-color: rgb(216, 59, 75);
+    border: 6px solid rgb(226, 99, 95);
+    left: -516px;
+}
+
+.menu-item-2 {
+    background-color: #0096E6;
     border: 6px solid rgb(118, 185, 216);
     left: -412px;
 }
 
-.menu-item-2 {
-    background-color: rgb(233, 57, 51);
-    border: 6px solid rgb(226, 99, 95);
+.menu-item-3 {
+    background-color: rgb(67, 201, 138);
+    border: 6px solid rgb(123, 216, 169);
     left: -308px;
 }
 
-.menu-item-3 {
-    background-color: rgb(79, 212, 146);
-    border: 6px solid rgb(123, 216, 169);
+.menu-item-4 {
+    background-color: rgb(236, 112, 63);
+    border: 6px solid rgb(231, 140, 104);
     left: -204px;
 }
 
-.menu-item-4 {
-    background-color: rgb(249, 192, 70);
-    border: 6px solid rgb(248, 205, 111);
+.menu-item-5 {
+    background-color: rgb(244, 228, 53);
+    border: 6px solid rgb(245, 237, 147);
     left: -100px;
 }
 
@@ -142,6 +148,7 @@ header {
 
 .hero-inner-container h1 {
     margin-bottom: 10px;
+    font-size: 4em;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -206,6 +213,7 @@ header {
 .skills-title {
     width: 100%;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .skills-wrapper {
@@ -219,7 +227,7 @@ header {
 
 .skills-container {
     border: 6px solid black;
-    height: 300px
+    height: 280px
 }
 
 .skill-container-1 {
@@ -246,7 +254,6 @@ header {
     margin: 15px auto;
     width:85%;
     height: 270px;
-    background: white;
 }
 
 .skill-individual-container-header {
@@ -263,9 +270,96 @@ header {
     vertical-align: middle;
 }
 
-.skills-individual-logo-container {
+.skills-individual-icon-container {
     width: 100%;
-    height: 196px;
+    height: 220px;
     margin-top: 15px;
     border: 6px solid black;
 }
+
+.skills-icon-1 {
+    background-image: url("./Pictures/html.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.skills-icon-2 {
+    background-image: url("./Pictures/css.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.skills-icon-3 {
+    background-image: url("./Pictures/javascript.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.skills-icon-4 {
+    background-image: url("./Pictures/psd.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.skills-icon-5 {
+    background-image: url("./Pictures/doc.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/*  Certification  */
+.achievements-title {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto 40px;
+
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.achievements-section {
+    max-width: 1180px;
+}
+
+.achievements-box {
+    width: 550px;
+    height: 420px;
+}
+
+.achievements-box-1 {
+    background-image: url("./Pictures/webdevcert.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    float: left;
+}
+
+.achievements-box-2 {
+    background-image: url("./Pictures/javascriptcert.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-left: 560px;
+}
+
+/*  Projects Section  */
+.projects-title {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto 40px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-inner-container {
+    max-width: 1180px;
+}
+
+
+
