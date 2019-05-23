@@ -126,14 +126,13 @@ header {
 
 .hero-box::before {
     background: url("./Pictures/color.jpg");
-    background-position: center;
     background-size: cover;
     background-repeat: repeat;
     transform-style: preserve-3d;
     transform: translatez(-1px) scale(2);
     content: "";
     width: 100vw;
-    height: 100vw;
+    height: 200vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -158,10 +157,15 @@ header {
 }
 
 /*  About Me Section  */
+.about-me-title-outer-container {
+    display: flex;
+    justify-content: center;
+}
+
 .about-me-title {
-    max-width: 1180px;
-    margin-left: 44%;
-    color: white;
+    display: flex;
+    width: 1180px;
+    margin: 100px 0 0 0;
 }
 
 .about-me-grid-container {
@@ -210,10 +214,15 @@ header {
 
 
 /*  Skills Section  */
+.skills-title-outer-container {
+    display: flex;
+    justify-content: center;
+}
+
 .skills-title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
+    display: flex;
+    width: 1180px;
+    margin: 100px 0 40px 0;
 }
 
 .skills-wrapper {
@@ -308,11 +317,15 @@ header {
 }
 
 /*  Certification Section  */
-.certification-title {
+.certification-title-outer-container {
     display: flex;
     justify-content: center;
-    margin: 100px auto 40px;
+}
 
+.certification-title {
+    display: flex;
+    width: 1180px;
+    margin: 100px 0 0;
 }
 
 .certification-container {
@@ -320,39 +333,42 @@ header {
     justify-content: center;
 }
 
-.certification-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2%;
-    max-width: 1180px;
+.certification-inner-container {
+    display: flex;
+    justify-content: space-around;
+    width: 1180px;
 }
 
 .certification-box {
-    width: 550px;
-    height: 420px;
+    flex-basis: 500px;
+    height: 500px;
+    
 }
 
 .certification-box-1 {
-    grid-column: 1/2;
     background-image: url("./Pictures/webdevcert.png");
-    background-size: cover;
     background-position: center;
-    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .certification-box-2 {
-    grid-column: 2/3;
     background-image: url("./Pictures/javascriptcert.png");
-    background-size: cover;
     background-position: center;
-    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /*  Projects Section  */
-.projects-title {
+.projects-title-outer-container {
     display: flex;
     justify-content: center;
-    margin: 100px auto 40px;
+}
+
+.projects-title {
+    display: flex;
+    width: 1180px;
+    margin: 100px 0 40px 0;
 }
 
 .projects-container {
@@ -361,24 +377,22 @@ header {
 }
 
 .projects-inner-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2%;
+    display: flex;
+    justify-content: space-around;
     width: 1180px;
 }
 
 .projects-individual-container {
-    max-height: 550px;
+    flex-basis: 550px;
+    height: 550px;
     border: 3px solid black;
 }
 
 .projects-individual-box-1 {
-    grid-column: 1/2;
     background: bisque;
 }
 
 .projects-individual-box-2 {
-    grid-column: 2/3;
     background: violet;
 }
 
