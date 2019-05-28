@@ -56,6 +56,7 @@
     <div class="about-me-title-outer-container">
       <div class="about-me-title">
         <h2>About Me</h2>
+        <div class="underline"></div>
       </div>
     </div>
 
@@ -75,6 +76,7 @@
     <div class="skills-title-outer-container">
       <div class="skills-title">
         <h2>Skills</h2>
+        <div class="underline"></div>
       </div>
     </div>
 
@@ -135,6 +137,7 @@
     <div class="certification-title-outer-container">
       <div class="certification-title">
         <h2>Certification</h2>
+        <div class="underline"></div>
       </div>
     </div>
     
@@ -150,6 +153,7 @@
     <div class="projects-title-outer-container">
       <div class="projects-title">
         <h2>Projects</h2>
+        <div class="underline"></div>
       </div>
     </div>
 
@@ -167,7 +171,7 @@
         <div class="projects-individual-container projects-individual-box-2">
           <div class="projects-bottom-half-box">
             <div class="projects-icon">
-              <img src="" alt="icon">
+              <img src="./Resources/Pictures/ic-logo.svg" alt="icon">
             </div>
           </div>
         </div>
@@ -177,24 +181,28 @@
 
   
 <!--  Form Section  -->
-    <form id="contact-form" method="post" action="contact-form.php">
-      <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-      <br>
-      <input name="email" type="email" class="form-control" placeholder="Your Email" required>
-      <br>
-      <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
-      <br>
-      <input type="submit" class="form-control submit" value="SEND MESSAGE">
-    </form>
+    <div class="form-container">
+      <div class="form-inner-container">
+        <form id="contact-form" method="post" action="contact-form.php">
+          <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+          <br>
+          <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+          <br>
+          <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+          <br>
+          <input type="submit" class="form-control submit" value="SEND MESSAGE">
+        </form>
+      </div>
+    </div>
 
 
 <!--  Footer Section  -->
-  <footer>
+    <footer>
 
-  </footer>
+    </footer>
 
 
-</div>
+  </div>
 </div>
 
 </body>

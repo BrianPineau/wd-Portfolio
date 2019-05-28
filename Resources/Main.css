@@ -78,40 +78,47 @@ header {
     top: -80px;
     width: 100px;
     height: 270px;
-    border-radius: 10px;
+    border-radius: 0% 25px;
     justify-content: center;
-    padding-top: 215px;
+    padding-top: 225px;
     color: white;
     font-weight: 700;
 }
 
 .menu-item-1 {
-    background-color: rgb(216, 59, 75);
-    border: 6px solid rgb(226, 99, 95);
+    background-color: rgb(170, 169, 169);
+    border: 3px solid rgb(146, 145, 145);
     left: -516px;
+    transition-duration: 0.15s;
+}
+
+.menu-item-1:hover {
+    background-color: rgb(216, 59, 75);
+    border: 3px solid rgb(226, 99, 95);
+    
 }
 
 .menu-item-2 {
     background-color: #0096E6;
-    border: 6px solid rgb(118, 185, 216);
+    border: 3px solid rgb(118, 185, 216);
     left: -412px;
 }
 
 .menu-item-3 {
     background-color: rgb(67, 201, 138);
-    border: 6px solid rgb(123, 216, 169);
+    border: 3px solid rgb(123, 216, 169);
     left: -308px;
 }
 
 .menu-item-4 {
     background-color: rgb(236, 112, 63);
-    border: 6px solid rgb(231, 140, 104);
+    border: 3px solid rgb(231, 140, 104);
     left: -204px;
 }
 
 .menu-item-5 {
     background-color: rgb(244, 228, 53);
-    border: 6px solid rgb(245, 237, 147);
+    border: 3px solid rgb(245, 237, 147);
     left: -100px;
 }
 
@@ -120,12 +127,12 @@ header {
 .hero-box {
     margin-top: 500px;
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
 
 }
 
 .hero-box::before {
-    background: url("./Pictures/color.jpg");
+    background: url("./Pictures/white.png");
     background-size: cover;
     background-repeat: repeat;
     transform-style: preserve-3d;
@@ -164,6 +171,7 @@ header {
 
 .about-me-title {
     display: flex;
+    flex-direction: column;
     width: 1180px;
     margin: 100px 0 0 0;
 }
@@ -185,7 +193,9 @@ header {
 .about-me-img {
   width: 450px;
   height: 450px;
-  background-color: white;
+  background-image: url("./Pictures/about-me.jpg");
+  background-size: cover;
+  background-position: center;
   border: 2px solid #CCCCCC;  
   border-radius: 50%;
 }
@@ -221,8 +231,16 @@ header {
 
 .skills-title {
     display: flex;
+    flex-direction: column;
     width: 1180px;
     margin: 100px 0 40px 0;
+}
+
+.underline {
+    width: 400px;
+    height: 0;
+    margin-top: 10px;
+    border: 1px solid rgb(214, 119, 119);
 }
 
 .skills-wrapper {
@@ -235,7 +253,7 @@ header {
 }
 
 .skills-container {
-    border: 6px solid black;
+    border: 3px solid black;
     height: 280px
 }
 
@@ -261,7 +279,7 @@ header {
 
 .skills-individual-container {
     margin: 15px auto;
-    width:85%;
+    width:70%;
     height: 270px;
 }
 
@@ -271,7 +289,7 @@ header {
     justify-content: center;
     width: 100%;
     height: 48px;
-    border: 6px solid black;
+    border: 3px solid black;
 }
 
 .skill-individual-container-header h3 {
@@ -281,39 +299,31 @@ header {
 
 .skills-individual-icon-container {
     width: 100%;
-    height: 220px;
+    height: 180px;
     margin-top: 15px;
-    border: 6px solid black;
+    border: 3px solid black;
+    background-size: cover;
+    background-position: center;
 }
 
 .skills-icon-1 {
     background-image: url("./Pictures/html.png");
-    background-size: cover;
-    background-position: center;
 }
 
 .skills-icon-2 {
-    background-image: url("./Pictures/css.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("./Pictures/css.png"); 
 }
 
 .skills-icon-3 {
     background-image: url("./Pictures/javascript.png");
-    background-size: cover;
-    background-position: center;
 }
 
 .skills-icon-4 {
     background-image: url("./Pictures/psd.png");
-    background-size: cover;
-    background-position: center;
 }
 
 .skills-icon-5 {
     background-image: url("./Pictures/doc.png");
-    background-size: cover;
-    background-position: center;
 }
 
 /*  Certification Section  */
@@ -324,6 +334,7 @@ header {
 
 .certification-title {
     display: flex;
+    flex-direction: column;
     width: 1180px;
     margin: 100px 0 0;
 }
@@ -367,6 +378,7 @@ header {
 
 .projects-title {
     display: flex;
+    flex-direction: column;
     width: 1180px;
     margin: 100px 0 40px 0;
 }
@@ -383,16 +395,107 @@ header {
 }
 
 .projects-individual-container {
-    flex-basis: 550px;
-    height: 550px;
+    position: relative;
+    flex-basis: 450px;
+    height: 450px;
     border: 3px solid black;
+    border-radius: 10px;
 }
 
 .projects-individual-box-1 {
     background: bisque;
+    background-image: url("./Pictures/shop.jpg");
+    background-size: contain;
 }
 
 .projects-individual-box-2 {
     background: violet;
+    background-image: url("./Pictures/ColmarAcademy.jpg");
+    background-size: contain;
 }
 
+.projects-bottom-half-box {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    border-top: 3px solid black;
+    z-index: 5;
+    background: brown;
+    border-radius: 0 0 2px 2px;
+    transition: all 0.25s ease-out; 
+}
+
+.projects-bottom-half-box:hover {
+    height: 99%;
+}
+
+.projects-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    background: red;
+    margin-top: -70px;
+    z-index: 10;
+    border: 6px solid black;
+    border-radius: 50%;
+}
+
+.projects-icon img {
+    width: 50%;
+}
+
+/*  Form Section  */
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-inner-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 1180px;
+}
+
+form {
+    width: 640px;
+    margin: 60px 0;
+}
+
+.form-control {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background-color: red;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    cursor: pointer;
+    transition: .18s ease-in-out;
+}
