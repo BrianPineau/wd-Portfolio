@@ -86,10 +86,10 @@ header {
 .header-list {
     display: inline-flex;
     position: absolute;
-    top: -80px;
+    top: -130px;
     width: 100px;
     height: 270px;
-    border-radius: 0% 25px;
+    border-radius: 10px;
     justify-content: center;
     padding-top: 225px;
     color: white;
@@ -106,7 +106,7 @@ header {
 .menu-item-1:hover {
     background-color: rgb(216, 59, 75);
     border: 9px solid rgb(226, 99, 95);
-    
+    top: -80px;
 }
 
 .menu-item-2 {
@@ -136,14 +136,16 @@ header {
 
 /*  Hero Section  */
 .hero-box {
-    margin-top: 500px;
+    display: flex;
+    justify-content: center;
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
+    margin: 240px 0 80px;
 
 }
 
 .hero-box::before {
-    background: url("./Pictures/white.png");
+    background: url("./Pictures/back3.jpg");
     background-size: cover;
     background-repeat: repeat;
     transform-style: preserve-3d;
@@ -158,9 +160,14 @@ header {
 }
 
 .hero-inner-container {
-    margin: 200px auto 0;
+    display: flex;
     max-width: 1180px;
     font-size: 2rem;
+}
+
+.hero-title {
+    width: 500px;
+    margin-top: 300px;;
 }
 
 .hero-inner-container h1 {
@@ -172,6 +179,17 @@ header {
 
 .hero-inner-container p {
     color: rgb(214, 119, 119);
+}
+
+.hero-image {
+    width: 500px;
+    height: 600px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
 }
 
 /*  About Me Section  */
