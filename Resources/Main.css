@@ -68,6 +68,8 @@ header {
 }
 
 .header-title-text {
+    display: flex;
+    align-items: center;
     max-width: 50%;
 }
 
@@ -94,43 +96,59 @@ header {
     padding-top: 225px;
     color: white;
     font-weight: 700;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(22, 22, 22);
+    transition-duration: 0.15s;
 }
 
 .menu-item-1 {
-    background-color: rgb(170, 169, 169);
-    border: 3px solid rgb(192, 191, 191);
     left: -516px;
-    transition-duration: 0.15s;
 }
 
 .menu-item-1:hover {
     background-color: rgb(216, 59, 75);
-    border: 9px solid rgb(226, 99, 95);
+    border: 3px solid rgb(226, 99, 95);
     top: -80px;
 }
 
 .menu-item-2 {
-    background-color: #0096E6;
-    border: 3px solid rgb(118, 185, 216);
     left: -412px;
 }
 
+.menu-item-2:hover {
+    background-color: #0096E6;
+    border: 3px solid rgb(118, 185, 216);
+    top: -80px;
+}
+
 .menu-item-3 {
-    background-color: rgb(67, 201, 138);
-    border: 3px solid rgb(123, 216, 169);
     left: -308px;
 }
 
+.menu-item-3:hover {
+    background-color: rgb(67, 201, 138);
+    border: 3px solid rgb(123, 216, 169);
+    top: -80px;
+}
+
 .menu-item-4 {
-    background-color: rgb(236, 112, 63);
-    border: 3px solid rgb(231, 140, 104);
     left: -204px;
 }
 
+.menu-item-4:hover {
+    background-color: rgb(236, 112, 63);
+    border: 3px solid rgb(231, 140, 104);
+    top: -80px;
+}
+
 .menu-item-5 {
+    left: -100px;
+}
+
+.menu-item-5:hover {
     background-color: rgb(244, 228, 53);
     border: 3px solid rgb(245, 237, 147);
-    left: -100px;
+    top: -80px;
 }
 
 
@@ -156,7 +174,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -100;
 }
 
 .hero-inner-container {
@@ -207,13 +225,63 @@ header {
 }
 
 .about-me-img {
-  width: 450px;
-  height: 450px;
-  background-image: url("./Pictures/about-me.jpg");
-  background-size: cover;
-  background-position: center;
-  border: 2px solid #CCCCCC;  
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-image: url("./Pictures/about-me.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #0096E6;  
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.about-me-img:hover {
+    height: 453px;
+    width: 453px;
+    border: 5px solid #0096E6;
+}
+
+.about-me-img:before {
+    content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.about-me-img:hover:before {
+    top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: #D83B4B;
+}
+
+
+.about-me-img:after {
+    content: " ";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  transition: all 0.2s ease-out;
+}
+
+.about-me-img:hover:after {
+    top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: #43C98A;
 }
 
 .about-me-image-title {
@@ -234,8 +302,8 @@ header {
 
 .about-me-paragraph p {
     height: 50%;
-    border: 2px solid #CCCCCC;
-    background-color: white;
+    border: 2px solid #6678AF;
+    background-color: #6F88C6;
 }
 
 
@@ -265,7 +333,6 @@ header {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 3%;
 }
 
 .skills-container {
@@ -477,6 +544,7 @@ header {
     display: flex;
     justify-content: flex-end;
     width: 1180px;
+    background-color: white;
 }
 
 form {
