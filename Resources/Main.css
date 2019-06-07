@@ -44,6 +44,7 @@ header {
     z-index: 100;
     background-color: black;
     margin: 0 auto;
+    transition: all 0.3s;
 }
 
 .header-inner-container {
@@ -103,9 +104,11 @@ header {
 
 .menu-item-1 {
     left: -516px;
+    color: #D73B4B;
 }
 
 .menu-item-1:hover {
+    color: white;
     background-color: rgb(216, 59, 75);
     border: 3px solid rgb(226, 99, 95);
     top: -80px;
@@ -113,9 +116,11 @@ header {
 
 .menu-item-2 {
     left: -412px;
+    color: #0096E5;
 }
 
 .menu-item-2:hover {
+    color: white;
     background-color: #0096E6;
     border: 3px solid rgb(118, 185, 216);
     top: -80px;
@@ -123,9 +128,11 @@ header {
 
 .menu-item-3 {
     left: -308px;
+    color: rgb(67, 201, 138);
 }
 
 .menu-item-3:hover {
+    color: white;
     background-color: rgb(67, 201, 138);
     border: 3px solid rgb(123, 216, 169);
     top: -80px;
@@ -133,9 +140,11 @@ header {
 
 .menu-item-4 {
     left: -204px;
+    color: rgb(236, 112, 63);
 }
 
 .menu-item-4:hover {
+    color: white;
     background-color: rgb(236, 112, 63);
     border: 3px solid rgb(231, 140, 104);
     top: -80px;
@@ -143,9 +152,11 @@ header {
 
 .menu-item-5 {
     left: -100px;
+    color: rgb(244, 228, 53);
 }
 
 .menu-item-5:hover {
+    color: white;
     background-color: rgb(244, 228, 53);
     border: 3px solid rgb(245, 237, 147);
     top: -80px;
@@ -163,7 +174,7 @@ header {
 }
 
 .hero-box::before {
-    background: url("./Pictures/back3.jpg");
+    background-image: url("./Pictures/skybg.jpg");
     background-size: cover;
     background-repeat: repeat;
     transform-style: preserve-3d;
@@ -184,15 +195,16 @@ header {
 }
 
 .hero-title {
-    width: 500px;
+    max-width: 60%;
     margin-top: 300px;;
 }
 
 .hero-inner-container h1 {
     margin-bottom: 10px;
-    font-size: 4em;
+    font-size: 60px;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index: 1000000;
 }
 
 .hero-inner-container p {
@@ -226,8 +238,8 @@ header {
 
 .about-me-img {
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     background-image: url("./Pictures/about-me.jpg");
     background-size: cover;
     background-position: center;
@@ -294,16 +306,20 @@ header {
 }
 
 .about-me-paragraph {
-    grid-column: 8/13;
+    grid-column: 7/-1;
     display: flex;
     align-items: center;
     height: 500px;
 }
 
 .about-me-paragraph p {
-    height: 50%;
+    height: 100%;
     border: 2px solid #6678AF;
-    background-color: #6F88C6;
+    border-radius: 10px;
+    background-color: #6679B7;
+    font-family: "Rubik";
+    font-size: 24px;
+    font-weight: bold;
 }
 
 
@@ -508,7 +524,7 @@ header {
     height: 50%;
     border-top: 3px solid black;
     z-index: 5;
-    background: brown;
+    background: lightskyblue;
     border-radius: 0 0 2px 2px;
     transition: all 0.25s ease-out; 
 }
@@ -544,7 +560,6 @@ header {
     display: flex;
     justify-content: flex-end;
     width: 1180px;
-    background-color: white;
 }
 
 form {
